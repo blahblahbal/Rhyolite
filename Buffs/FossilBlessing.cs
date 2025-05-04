@@ -6,6 +6,11 @@ namespace Rhyolite.Buffs;
 
 public class FossilBlessing : ModBuff
 {
+    public override bool RightClick(int buffIndex)
+    {
+        Main.LocalPlayer.GetModPlayer<RhyolitePlayer>().FossilBlessingActive = false;
+        return base.RightClick(buffIndex);
+    }
     public override void Update(Player player, ref int buffIndex)
     {
 		player.velocity.X *= 0f;

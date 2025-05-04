@@ -27,13 +27,13 @@ internal class RhyolitePlayer : ModPlayer
         {
             if (!Player.IsOnGroundPrecise())
             {
-                Player.velocity.Y = 20f * Player.gravDir;
+                Player.velocity.Y = 100f * Player.gravDir;
             }
             if (Player.velocity.Y > 0)
             {
                 for (int x = 0; x < 5; x++)
                 {
-                    int d = Dust.NewDust(new Vector2(Player.Center.X, Player.position.Y + Player.height), 10, 10, DustID.Smoke);
+                    int d = Dust.NewDust(new Vector2(Player.Center.X, Player.position.Y + Player.height), 10, 10, DustID.SolarFlare);
                 }
             }
             if (Main.rand.NextBool(20))
@@ -66,6 +66,16 @@ internal class RhyolitePlayer : ModPlayer
             }
         }
     }
+    public override void PostUpdate()
+    {
+        if (GroundPoundActivated)
+        {
+            if (!Player.IsOnGroundPrecise())
+            {
+                Player.velocity.Y = 100f * Player.gravDir;
+            }
+        }
+    }
     public override void PostUpdateEquips()
     {
         if (!FossilBlessing)
@@ -74,7 +84,6 @@ internal class RhyolitePlayer : ModPlayer
         }
         if (FossilBlessing && !Player.mount.Active && Player.DoublePressedReversedSetBonusActivateKey())
         {
-            Main.NewText(FossilBlessingActive);
             if (FossilBlessingActive)
             {
                 FossilBlessingActive = false;
@@ -83,7 +92,7 @@ internal class RhyolitePlayer : ModPlayer
             {
                 FossilBlessingActive = true;
                 Player.AddBuff(ModContent.BuffType<FossilBlessing>(), 10 * 60);
-                Player.AddBuff(ModContent.BuffType<FossilBlessingCooldown>(), 60 * 1);
+                Player.AddBuff(ModContent.BuffType<FossilBlessingCooldown>(), 60 * 55);
             }
         }
 

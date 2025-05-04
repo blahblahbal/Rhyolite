@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using System;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.Audio;
@@ -21,7 +22,7 @@ public class EruptionInABottle : ModItem
         if (player.DoublePressedDown())
         {
             player.GetModPlayer<RhyolitePlayer>().GroundPoundActivated = true;
-            //player.velocity.Y += player.gravDir * 200f;
+            SoundEngine.PlaySound(SoundID.DoubleJump, player.position);
         }
 
         if (player.GetModPlayer<RhyolitePlayer>().GroundPoundActivated)
@@ -43,6 +44,13 @@ public class EruptionInABottle : ModItem
             }
             if (player.IsOnGround() && (player.gravDir == 1f ? player.GetModPlayer<RhyolitePlayer>().playerOldVelocity[2].Y > 0f : player.GetModPlayer<RhyolitePlayer>().playerOldVelocity[2].Y < 0f) && player.velocity.Y == 0f && fall_time > 1) // just fell
             {
+                for (int dustCount = 0; dustCount < 50; dustCount++)
+                {
+                    float rotation = Main.rand.NextFloat() * MathHelper.TwoPi;
+                    Dust D2 = Dust.NewDustDirect(new Vector2(player.Center.X, player.Bottom.Y), 16, 16, DustID.SolarFlare, 0, 0, 100, new Color(), 1f);
+                    D2.velocity = new Vector2((float)Math.Sin(rotation), (float)Math.Cos(rotation)) * Main.rand.NextFloat(2.5f, 4f);
+                    D2.noGravity = true;
+                }
                 player.GetModPlayer<RhyolitePlayer>().GroundPoundActivated = false;
                 float fall_dist = ((fall_time - 23f) / (76f - 23f) * (21f - 3.5f) + 3.5f) * (player.GetModPlayer<RhyolitePlayer>().playerOldVelocity[2].Y * player.gravDir / 10f); // remap fall_time to range from 3.5f to 21f
 
