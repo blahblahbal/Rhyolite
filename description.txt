@@ -1,0 +1,41 @@
+Rhyolite adds a new minibiome called (you guessed it) Rhyolite to the underground, like Marble and Granite.
+It generates right above Underworld, opening up into it. It will also be a part of an upcoming mod called Xenon as well.
+
+The mod contains:
+- The biome (it generates 2 per world, no matter the size)
+- The full Rhyolite furniture set
+- Smooth Rhyolite Blocks
+- Shimmer recipes for swapping Marble, Granite, and Rhyolite
+- 2 mobs for the Rhyolite biome:
+ * Rhyolite Slimer
+ * Lava Worm
+
+
+
+ALSO: The mod is looking for someone to update the sprites for various recolors or slight edits to the sprites in the mod.
+
+
+Updates:
+
+v1.1
+- Fixed the interior of the biome's tunnel having weird spike-like things (it now is correctly random-looking)
+- Fixed Rhyolite furniture that emits light emitting the wrong color of light
+- Fixed backwalls extending too far above and below the biome
+- Fixed unsafe Rhyolite Walls dropping the safe wall item
+
+v1.2
+- Changed how the top and bottom of the biome generate; they are now more jagged and blend better with the surrounding terrain/blocks
+
+v1.3
+- Fixed alignment of 4 tilesheets
+- Added Biome Titles support (without an icon sadly)
+
+v1.4
+- Fixed Rhyolite cabins having patches of no walls
+- Added small hanging lava pools to the sides of the Rhyolite cave gen
+- Added a small icon for the mod
+- Fixed Rhyolite cave mobs not dropping Rhyolite Blocks at the proper chance
+- Added a config option to allow between 2 and 4 Rhyolite caves in a world (default is 2)
+- Added Tuna Melt food item
+- Added Fossilized Blessing accessory
+- Added Eruption in a Bottle accessory

@@ -1,0 +1,234 @@
+Mods: {
+	BiomeTitles.Title.Rhyolite.RhyoliteCave: Rhyolite Caves
+
+	Rhyolite: {
+		Generation.Rhyolite: Erupting rhyolite
+
+		Tiles: {
+			RhyoliteChest.MapEntry0: Rhyolite Chest
+			RhyoliteDresser.MapEntry: Rhyolite Dresser
+		}
+
+		Bestiary: {
+			RhyoliteSlimer: This slime is a relative of the Corruption's Slimer, but is more primitive. It simply dies after its wings have been destroyed.
+			LavaWorm: A worm inflicted with a curse of fire. It burrows through hot magma, inflicting serious injury on anyone who touches it.
+		}
+
+		Tooltips.FossilizedBlessing:
+			'''
+			Provides 7 seconds of immunity to lava
+			Double tap {0} to activate fossilized blessing
+			Increases defense and life regeneration by 7 but you cannot move
+			'''
+
+		Items: {
+			FossilizedBlessing: {
+				DisplayName: Fossilized Blessing
+				Tooltip: ""
+			}
+
+			EruptionInABottle: {
+				DisplayName: Eruption in a Bottle
+				Tooltip:
+					'''
+					Double tap DOWN to ground pound
+					Radius increases the more you fall
+					'''
+			}
+
+			RhyoliteBathtub: {
+				DisplayName: Rhyolite Bathtub
+				Tooltip: ""
+			}
+
+			RhyoliteBed: {
+				DisplayName: Rhyolite Bed
+				Tooltip: ""
+			}
+
+			RhyoliteBookcase: {
+				DisplayName: Rhyolite Bookcase
+				Tooltip: ""
+			}
+
+			RhyoliteCandelabra: {
+				DisplayName: Rhyolite Candelabra
+				Tooltip: ""
+			}
+
+			RhyoliteCandle: {
+				DisplayName: Rhyolite Candle
+				Tooltip: ""
+			}
+
+			RhyoliteChair: {
+				DisplayName: Rhyolite Chair
+				Tooltip: ""
+			}
+
+			RhyoliteChandelier: {
+				DisplayName: Rhyolite Chandelier
+				Tooltip: ""
+			}
+
+			RhyoliteChest: {
+				DisplayName: Rhyolite Chest
+				Tooltip: ""
+			}
+
+			RhyoliteClock: {
+				DisplayName: Rhyolite Clock
+				Tooltip: ""
+			}
+
+			RhyoliteDoor: {
+				DisplayName: Rhyolite Door
+				Tooltip: ""
+			}
+
+			RhyoliteDresser: {
+				DisplayName: Rhyolite Dresser
+				Tooltip: ""
+			}
+
+			RhyoliteLamp: {
+				DisplayName: Rhyolite Lamp
+				Tooltip: ""
+			}
+
+			RhyoliteLantern: {
+				DisplayName: Rhyolite Lantern
+				Tooltip: ""
+			}
+
+			RhyolitePiano: {
+				DisplayName: Rhyolite Piano
+				Tooltip: ""
+			}
+
+			RhyolitePlatform: {
+				DisplayName: Rhyolite Platform
+				Tooltip: ""
+			}
+
+			RhyoliteSink: {
+				DisplayName: Rhyolite Sink
+				Tooltip: ""
+			}
+
+			RhyoliteSofa: {
+				DisplayName: Rhyolite Sofa
+				Tooltip: ""
+			}
+
+			RhyoliteTable: {
+				DisplayName: Rhyolite Table
+				Tooltip: ""
+			}
+
+			RhyoliteToilet: {
+				DisplayName: Rhyolite Toilet
+				Tooltip: ""
+			}
+
+			RhyoliteWorkBench: {
+				DisplayName: Rhyolite Work Bench
+				Tooltip: ""
+			}
+
+			RhyoliteBlock: {
+				DisplayName: Rhyolite Block
+				Tooltip: ""
+			}
+
+			RhyoliteColumn: {
+				DisplayName: Rhyolite Column
+				Tooltip: ""
+			}
+
+			SmoothRhyoliteBlock: {
+				DisplayName: Smooth Rhyolite Block
+				Tooltip: ""
+			}
+
+			RhyoliteWall: {
+				DisplayName: Rhyolite Wall
+				Tooltip: ""
+			}
+
+			LavaWormBanner: {
+				DisplayName: Lava Worm Banner
+				Tooltip: ""
+			}
+
+			RhyoliteSlimerBanner: {
+				DisplayName: Rhyolite Slimer Banner
+				Tooltip: ""
+			}
+
+			SmoothRhyoliteWall: {
+				DisplayName: Smooth Rhyolite Wall
+				Tooltip: ""
+			}
+
+			WorldgenHelper: {
+				DisplayName: Worldgen Helper (Rhyolite)
+				Tooltip:
+					'''
+					DO NOT USE
+					IT WILL OVERWRITE ALL BLOCKS IN A RADIUS
+					YOU HAVE BEEN WARNED
+					'''
+			}
+
+			FossilFakeDye: {
+				DisplayName: Fossil Fake Dye
+				Tooltip: ""
+			}
+
+			TunaMelt: {
+				DisplayName: Tuna Melt
+				Tooltip: "{$CommonItemTooltip.MediumStats}"
+			}
+		}
+
+		Biomes: {
+			Rhyolite: {
+				DisplayName: Rhyolite
+				TownNPCDialogueName: the Rhyolite
+			}
+		}
+
+		NPCs: {
+			LavaWormHead.DisplayName: Lava Worm
+			LavaWormBody.DisplayName: Lava Worm
+			LavaWormTail.DisplayName: Lava Worm
+			RhyoliteSlimer.DisplayName: Rhyolite Slimer
+		}
+
+		Buffs: {
+			FossilBlessing: {
+				DisplayName: Fossil Blessing
+				Description: Defense and life regeneration increased by 7
+			}
+
+			FossilBlessingCooldown: {
+				DisplayName: Fossil Blessing Cooldown
+				Description: You cannot activate Fossil Blessing
+			}
+		}
+
+		Configs: {
+			RhyoliteConfig: {
+				DisplayName: Rhyolite Config
+
+				NumCaves: {
+					Label: Num Caves
+					Tooltip: ""
+				}
+			}
+		}
+
+		Config.ItemHeader: Num Caves Header
+	}
+}
