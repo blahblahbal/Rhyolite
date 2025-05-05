@@ -94,7 +94,7 @@ public class RhyoliteGenPass : GenPass
 		}
 		if (ModContent.GetInstance<RhyoliteConfig>().NumCaves > 2)
 		{
-			for (int i = 0; i < ModContent.GetInstance<RhyoliteConfig>().NumCaves - 2; i++)
+			for (int i = 0; i <= ModContent.GetInstance<RhyoliteConfig>().NumCaves - 2; i++)
 			{
 				xpos = WorldGen.genRand.Next(150, Main.maxTilesX - 150);
 				for (int q = 0; q < 10; q++)

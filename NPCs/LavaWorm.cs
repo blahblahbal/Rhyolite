@@ -86,6 +86,7 @@ public class LavaWormHead : WormHead
     {
         npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<RhyoliteBlock>(), 1, 5, 11));
         npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<FossilizedBlessing>(), 35));
+        npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<EruptionInABottle>(), 35));
     }
     public override void Init()
     {
