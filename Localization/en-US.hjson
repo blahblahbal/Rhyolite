@@ -181,11 +181,6 @@ Mods: {
 					'''
 			}
 
-			FossilFakeDye: {
-				DisplayName: Fossil Fake Dye
-				Tooltip: ""
-			}
-
 			TunaMelt: {
 				DisplayName: Tuna Melt
 				Tooltip: "{$CommonItemTooltip.MediumStats}"
@@ -223,12 +218,12 @@ Mods: {
 				DisplayName: Rhyolite Config
 
 				NumCaves: {
-					Label: Num Caves
-					Tooltip: ""
+					Label: Number of Caves
+					Tooltip: Amount of Rhyolite caves that generate per world (min 2, max 4)
 				}
 			}
 		}
 
-		Config.ItemHeader: Num Caves Header
+		Config.ItemHeader: Rhyolite Config
 	}
 }

@@ -84,9 +84,9 @@ internal class RhyolitePlayer : ModPlayer
         }
         if (FossilBlessing && !Player.mount.Active && Player.DoublePressedReversedSetBonusActivateKey())
         {
-            if (FossilBlessingActive)
+            if (Player.HasBuff<FossilBlessing>())
             {
-                FossilBlessingActive = false;
+                Player.ClearBuff(ModContent.BuffType<FossilBlessing>());
             }
             else if (!Player.HasBuff<FossilBlessingCooldown>())
             {

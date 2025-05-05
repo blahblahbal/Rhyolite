@@ -17,10 +17,10 @@ public class FossilBlessing : ModBuff
 		player.statDefense += 20;
 		player.lifeRegen += 20;
 		player.controlJump = false;
-		player.controlDown = false;
+		//player.controlDown = false;
 		player.controlLeft = false;
 		player.controlRight = false;
-		player.controlUp = false;
+		//player.controlUp = false;
 		player.controlUseItem = false;
 		player.controlUseTile = false;
 		player.controlThrow = false;
