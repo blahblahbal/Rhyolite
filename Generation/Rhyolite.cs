@@ -78,28 +78,28 @@ public class RhyoliteGenPass : GenPass
 		int xpos = WorldGen.genRand.Next(150, Main.maxTilesX / 2 - 200);
 		int xpos2 = WorldGen.genRand.Next(Main.maxTilesX / 2 + 200, Main.maxTilesX - 150);
 		WorldGenConfiguration config = WorldGenConfiguration.FromEmbeddedPath("Terraria.GameContent.WorldBuilding.Configuration.json");
-		if (Rhyolite.PlaceRhyolite(xpos, ypos))
+		//if (Rhyolite.PlaceRhyolite(xpos, ypos))
+		//{
+		//	RhyoliteCabin cabin = config.CreateBiome<RhyoliteCabin>();
+		//	int xpost = WorldGen.genRand.Next(xpos - 10, xpos + 20);
+		//	int ypost = WorldGen.genRand.Next(ypos + 10, ypos + 50);
+		//	cabin.Place(new Point(xpost, ypost), null);
+		//}
+		//if (Rhyolite.PlaceRhyolite(xpos2, ypos))
+		//{
+		//	RhyoliteCabin cabin = config.CreateBiome<RhyoliteCabin>();
+		//	int xpost = WorldGen.genRand.Next(xpos2 - 10, xpos2 + 20);
+		//	int ypost = WorldGen.genRand.Next(ypos + 10, ypos + 50);
+		//	cabin.Place(new Point(xpost, ypost), null);
+		//}
+		//if (ModContent.GetInstance<RhyoliteConfig>().NumCaves > 2)
 		{
-			RhyoliteCabin cabin = config.CreateBiome<RhyoliteCabin>();
-			int xpost = WorldGen.genRand.Next(xpos - 10, xpos + 20);
-			int ypost = WorldGen.genRand.Next(ypos + 10, ypos + 50);
-			cabin.Place(new Point(xpost, ypost), null);
-		}
-		if (Rhyolite.PlaceRhyolite(xpos2, ypos))
-		{
-			RhyoliteCabin cabin = config.CreateBiome<RhyoliteCabin>();
-			int xpost = WorldGen.genRand.Next(xpos2 - 10, xpos2 + 20);
-			int ypost = WorldGen.genRand.Next(ypos + 10, ypos + 50);
-			cabin.Place(new Point(xpost, ypost), null);
-		}
-		if (ModContent.GetInstance<RhyoliteConfig>().NumCaves > 2)
-		{
-			for (int i = 0; i <= ModContent.GetInstance<RhyoliteConfig>().NumCaves - 2; i++)
+			for (int i = 0; i < ModContent.GetInstance<RhyoliteConfig>().NumCaves; i++)
 			{
 				xpos = WorldGen.genRand.Next(150, Main.maxTilesX - 150);
 				for (int q = 0; q < 10; q++)
 				{
-					if (xpos > Main.maxTilesX / 2 - 200 && xpos < Main.maxTilesX / 2 + 200)
+					if (xpos > Main.maxTilesX / 2 - 250 && xpos < Main.maxTilesX / 2 + 250)
 					{
 						xpos = WorldGen.genRand.Next(150, Main.maxTilesX - 150);
 					}

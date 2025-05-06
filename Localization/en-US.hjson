@@ -219,7 +219,7 @@ Mods: {
 
 				NumCaves: {
 					Label: Number of Caves
-					Tooltip: Amount of Rhyolite caves that generate per world (min 2, max 4)
+					Tooltip: Amount of Rhyolite caves that generate per world (min 2, max 6)
 				}
 			}
 		}

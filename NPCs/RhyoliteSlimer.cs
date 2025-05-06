@@ -5,6 +5,7 @@ using Terraria.GameContent.ItemDropRules;
 using Terraria.GameContent.Bestiary;
 using Rhyolite.Items.Placeable.Tile;
 using Rhyolite.Items.Accessories;
+using Rhyolite.Items.Food;
 
 namespace Rhyolite.NPCs;
 
@@ -63,5 +64,6 @@ public class RhyoliteSlimer : ModNPC
         npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<RhyoliteBlock>(), 1, 5, 11));
         npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<FossilizedBlessing>(), 35));
         npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<EruptionInABottle>(), 35));
+        npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<TunaMelt>(), 50));
     }
 }

@@ -9,7 +9,7 @@ internal class RhyoliteConfigLimiter : ModSystem
     public override void PostSetupContent()
     {
         if (ModContent.GetInstance<RhyoliteConfig>().NumCaves < 2) ModContent.GetInstance<RhyoliteConfig>().NumCaves = 2;
-        if (ModContent.GetInstance<RhyoliteConfig>().NumCaves > 4) ModContent.GetInstance<RhyoliteConfig>().NumCaves = 4;
+        if (ModContent.GetInstance<RhyoliteConfig>().NumCaves > 6) ModContent.GetInstance<RhyoliteConfig>().NumCaves = 6;
     }
 }
 internal class RhyoliteConfig : ModConfig
