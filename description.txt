@@ -34,8 +34,8 @@ v1.4
 - Fixed Rhyolite cabins having patches of no walls
 - Added small hanging lava pools to the sides of the Rhyolite cave gen
 - Added a small icon for the mod
-- Fixed Rhyolite cave mobs not dropping Rhyolite Blocks at the proper chance
+- Fixed Rhyolite cave mobs not dropping Rhyolite Blocks at the proper chance (and fixed them dropping 5-11 instead of 5-10)
 - Added a config option to allow between 2 and 6 Rhyolite caves in a world (default is 2)
 - Added Tuna Melt food item (drops from Rhyolite mobs at a 2% chance)
-- Added Fossilized Blessing accessory (drops at a 1 in 35 chance)
-- Added Eruption in a Bottle accessory (drops at a 1 in 35 chance)
+- Added Fossilized Blessing accessory (drops at a 1 in 35 chance from both Rhyolite mobs)
+- Added Eruption in a Bottle accessory (drops at a 1 in 35 chance from both Rhyolite mobs)
